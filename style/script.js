@@ -13,4 +13,6 @@ function myForm() {
             // Display the confirmation message
             confirmationMessage.innerHTML = 'Thank you, ' + name + ', your table is confirmed for ' + date + ' at ' + time;
 
+            return false;
+
         }
