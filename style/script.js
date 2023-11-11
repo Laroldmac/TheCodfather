@@ -1,4 +1,4 @@
-function hideForm() {
+function myForm() {
             // Get the form elements by their IDs
             var form = document.getElementById('hideForm');
             var confirmationMessage = document.getElementById('confirmationMessage');
