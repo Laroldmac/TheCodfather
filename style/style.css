@@ -17,6 +17,7 @@
     background-color: #333;
     color: aliceblue;
     border-top: none;
+    border-bottom: none;
     box-shadow: none;
 }
 .para{
