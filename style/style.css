@@ -24,3 +24,6 @@ h1 {
 .para{
     background-color: #333;
 }
+iframe{
+    border-width: medium;
+}
