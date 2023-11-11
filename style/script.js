@@ -1,4 +1,4 @@
-nction myForm() {
+function myForm() {
     // Get the form elements by their IDs
     var form = document.getElementById('myForm');
     var confirmationMessage = document.getElementById('confirmationMessage');
