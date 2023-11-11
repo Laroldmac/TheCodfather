@@ -9,8 +9,8 @@ function hideForm() {
             var time = document.getElementById('time').value;
 
             // Set the display property of the form to "none" to hide it
-            form.style.display = 'none';
+            form.style.display = 'confirmationMessage.innerHTML = 'Thank you, ' + name + ', your table is confirmed for ' + date + ' at ' + time;';
 
             // Display the confirmation message
-            confirmationMessage.innerHTML = 'Thank you, ' + name + ', your table is confirmed for ' + date + ' at ' + time;
+            
         }
