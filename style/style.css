@@ -9,6 +9,8 @@
 
 .heading {
     font-size: 200%;
+    border-top: none;
+    box-shadow: none;
 }
 
 .navbar {
