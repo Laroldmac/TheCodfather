@@ -12,6 +12,8 @@
 .navbar{
   background-color: #333;
   color: aliceblue;
+  border-top:none;
+  box-shadow:non;
 }
 div{
   background-color: #333;
