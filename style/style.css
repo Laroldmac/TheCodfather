@@ -1,20 +1,19 @@
-*{
-  background-color: #333;
-  color: aliceblue;
-  font-stretch: expanded;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-style: bold;
-  text-align: center;
+* {
+    background-color: #333;
+    color: aliceblue;
+    font-stretch: expanded;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: bold;
+    text-align: center;
 }
-.heading{
-  font-size: 200%;
+
+.heading {
+    font-size: 200%;
 }
-.navbar{
-  background-color: #333;
-  color: aliceblue;
-  border-top:none;
-  box-shadow:none;
-}
-div{
-  background-color: #333;
+
+.navbar {
+    background-color: #333;
+    color: aliceblue;
+    border-top: none;
+    box-shadow: none;
 }
