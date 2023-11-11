@@ -4,11 +4,11 @@ var currentDate = new Date();
     var year = currentDate.getFullYear();
 
 if (day < 10) {
-        day = '0' + day; // Add leading zero if day is a single digit
+        day = '0' + day; 
     }
 
     if (month < 10) {
-        month = '0' + month; // Add leading zero if month is a single digit
+        month = '0' + month; 
     }
 
     var formattedDate = year + '-' + month + '-' + day;
