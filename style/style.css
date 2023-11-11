@@ -9,8 +9,8 @@
 
 .heading {
     font-size: 200%;
-    border-top: none;
-    border-bottom: none;
+    margin-top: none;
+    margin-bottom: none;
     box-shadow: none;
 }
 
