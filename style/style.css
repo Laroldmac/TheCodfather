@@ -16,13 +16,9 @@ h1 {
 
 .navbar {
     background-color: #333;
-    color: aliceblue;
+    color: aliceblue !important;
     border-top: none;
-    
     box-shadow: none;
-}
-.navbar a {
-    color: white;
 }
 .para{
     background-color: #333;
