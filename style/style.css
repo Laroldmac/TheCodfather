@@ -21,6 +21,9 @@ h1 {
     
     box-shadow: none;
 }
+.navbar a {
+    color: white;
+}
 .para{
     background-color: #333;
 }
