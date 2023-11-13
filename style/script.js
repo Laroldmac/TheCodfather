@@ -15,7 +15,7 @@ if (day < 10) {
 
     document.getElementById('date').min = formattedDate;
 
-document.getElementById("time").step = "900";
+document.getElementById("time").step = "900" !important;
 
 function myForm() {
     // Get the form elements by their IDs
