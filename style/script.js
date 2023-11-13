@@ -15,6 +15,8 @@ if (day < 10) {
 
     document.getElementById('date').min = formattedDate;
 
+document.getElementById("time").step = "15";
+
 function myForm() {
     // Get the form elements by their IDs
     var form = document.getElementById('myForm');
