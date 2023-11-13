@@ -1,6 +1,6 @@
 * {
     background-color: #333;
-    color: aliceblue;
+    color: aliceblue !important;
     font-stretch: expanded;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: bold;
