@@ -37,15 +37,7 @@
     <form id="myForm" onsubmit="return myForm()">
     Name: <input id="name" /><br><br>
     Email: <input id="email" /><br><br>
-    Date: <input type="date" id="date" min="<?php echo date('d-m-Y'); ?>" />
-    Time: <input type="time" id="time" list="times">
-        <datalist id="times">
-  <option value="hh:00"></option>
-  <option value="hh:15"></option>
-  <option value="hh:30"></option>
-  <option value="hh:45"></option>
-</datalist>
-        </input>
+    Date: <input type="datetime-local" min="<?php echo date('d-m-Y'); ?>" />
         <br><br>
     <input type="submit" value="Submit" /><br>
     </form>
