@@ -16,6 +16,26 @@ if (day < 10) {
     document.getElementById('date').min = formattedDate;
 
 document.getElementById("time").step = "900";
+const timeInput = document.getElementById('timeInput');
+
+timeInput.addEventListener('input', function() {
+    const selectElement = document.querySelector('#timeInput::-webkit-calendar-picker-indicator');
+
+    if (selectElement) {
+        selectElement.addEventListener('click', function() {
+            const options = document.querySelectorAll('#timeInput option');
+
+            options.forEach(option => {
+                const value = parseInt(option.value.split(':')[1]);
+                if (![0, 15, 30, 45].includes(value)) {
+                    option.setAttribute('hidden', 'true');
+                } else {
+                    option.removeAttribute('hidden');
+                }
+            });
+        });
+    }
+});
 
 function myForm() {
     // Get the form elements by their IDs
