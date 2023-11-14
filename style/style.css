@@ -26,3 +26,78 @@ h1 {
 iframe{
     border-width: medium;
 }
+
+/* CSS for Index page below*/
+
+.R-Item {
+
+height: 500px;
+border-radius: 30%;
+
+}
+
+.R-Img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30%;
+
+}
+
+.ContainerIndex {
+    padding: 50px;
+
+}
+
+.Col1{
+    display: flex;
+    flex-wrap: wrap;
+   border-radius: 3%;
+   border: 5px solid beige;
+   justify-content: space-between;
+}
+
+.IndexCol1{
+
+    flex:1 ;
+    order:1;
+    flex-grow: 3;
+    
+}
+
+.IndexCol2 {
+
+    flex:2 ;
+    order:3;
+   
+}
+
+.IndexCol3 {
+
+    flex:3 ;
+    order:3;
+  
+}
+
+.IndexCol1 .IndexCol2 .IndexCol3 h2 {
+
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+
+}
+
+.IndexCol1 .IndexCol2 .IndexCol3 h2 {
+content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+
+}
+
+/* CSS for Index page ends */
