@@ -16,7 +16,7 @@ if (day < 10) {
     document.getElementById('date').min = formattedDate;
 
 document.getElementById("time").step = "900";
-const timeInput = document.getElementById('timeInput');
+const timeInput = document.getElementById('time');
 
 timeInput.addEventListener('input', function() {
     const selectElement = document.querySelector('#timeInput::-webkit-calendar-picker-indicator');
