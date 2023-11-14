@@ -38,7 +38,14 @@
     Name: <input id="name" /><br><br>
     Email: <input id="email" /><br><br>
     Date: <input type="date" id="date" min="<?php echo date('d-m-Y'); ?>" />
-    Time: <input type="time" id="time" /><br><br>
+    Time: <input type="time" id="time" list="times"/>
+        <datalist id="times">
+  <option value="00"></option>
+  <option value="15"></option>
+  <option value="30"></option>
+  <option value="45"></option>
+</datalist>
+        <br><br>
     <input type="submit" value="Submit" /><br>
     </form>
     <p id="confirmationMessage"></p>
