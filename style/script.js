@@ -23,7 +23,7 @@ timeInput.addEventListener('input', function() {
 
     if (selectElement) {
         selectElement.addEventListener('click', function() {
-            const options = document.querySelectorAll('#timeInput option');
+            const options = document.querySelectorAll('#select option');
 
             options.forEach(option => {
                 const value = parseInt(option.value.split(':')[1]);
