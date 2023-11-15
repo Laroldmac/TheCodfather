@@ -39,21 +39,21 @@ document.getElementById('mins').addEventListener('change', filterTimeOptions);
 
 function myForm() {
     // Get the form elements by their IDs
-    var form = document.getElementById('myForm');
-    var confirmationMessage = document.getElementById('confirmationMessage');
-    
-
-    // Get the values from the form
     var name = document.getElementById('name').value;
-    var date = document.getElementById('date').value;
-    var time = document.getElementById('time').value;
+    var email = document.getElementById('email').value;
+    var date = document.querySelector('input[type="date"]').value;
+    var hours = document.getElementById('hours').value;
+    var mins = document.getElementById('mins').value;
 
     // Set the display property of the form to "none" to hide it
-    form.style.display = 'none';
+    document.getElementById('myForm').style.display = 'none';
 
     // Display the confirmation message
-    confirmationMessage.innerHTML = 'Thank you, ' + name + ', your table is confirmed for ' + date + ' at ' + time;
+    var confirmationMessage = document.getElementById('confirmationMessage');
+    confirmationMessage.innerHTML = 'Thank you, ' + name + ', your table is confirmed for ' + date + ' at ' + hours + ':' + mins;
 
     // Prevent default form submission
     return false;
+}
+
 }
