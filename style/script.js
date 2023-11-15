@@ -14,7 +14,6 @@ if (month < 10) {
 var formattedDate = year + '-' + month + '-' + day;
 
 document.getElementById('date').min = formattedDate;
-document.getElementById("time").step = "900";
 
 // Function to filter time options based on hours and minutes
 function filterTimeOptions() {
