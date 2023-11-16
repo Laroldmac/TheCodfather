@@ -32,10 +32,6 @@ function filterTimeOptions() {
     });
 }
 
-// Event listeners for time inputs
-document.getElementById('hours').addEventListener('change', filterTimeOptions);
-document.getElementById('mins').addEventListener('change', filterTimeOptions);
-
 function myForm() {
     // Get the form elements by their IDs
     var name = document.getElementById('name').value;
