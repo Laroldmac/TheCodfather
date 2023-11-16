@@ -46,7 +46,7 @@ function myForm() {
     // Display the confirmation message
     var confirmationMessage = document.getElementById('confirmationMessage');
     confirmationMessage.innerHTML = 'Thank you, ' + name + ', your table is confirmed for ' + date + ' at ' + hours + ':' + mins;
-};
+
     // Prevent default form submission
     return false;
 }
