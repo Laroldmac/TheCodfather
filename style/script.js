@@ -33,8 +33,8 @@ function filterTimeOptions() {
 }
 
 // Event listeners for time inputs
-document.getElementById('hours').addEventListener('change', filterTimeOptions);
-document.getElementById('mins').addEventListener('change', filterTimeOptions);
+//document.getElementById('hours').addEventListener('change', filterTimeOptions);
+//document.getElementById('mins').addEventListener('change', filterTimeOptions);
 
 function myForm() {
     // Get the form elements by their IDs
@@ -53,6 +53,4 @@ function myForm() {
 
     // Prevent default form submission
     return false;
-}
-
 }
