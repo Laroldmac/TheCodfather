@@ -52,5 +52,5 @@ function myForm() {
     confirmationMessage.innerHTML = 'Thank you, ' + name + ', your table is confirmed for ' + date + ' at ' + hours + ':' + mins;
 
     // Prevent default form submission
-    return false;
+    //return false;
 }
