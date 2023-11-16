@@ -33,8 +33,8 @@ function filterTimeOptions() {
 }
 
 // Event listeners for time inputs
-//document.getElementById('hours').addEventListener('change', filterTimeOptions);
-//document.getElementById('mins').addEventListener('change', filterTimeOptions);
+document.getElementById('hours').addEventListener('change', filterTimeOptions);
+document.getElementById('mins').addEventListener('change', filterTimeOptions);
 
 function myForm() {
     // Get the form elements by their IDs
@@ -52,5 +52,5 @@ function myForm() {
     confirmationMessage.innerHTML = 'Thank you, ' + name + ', your table is confirmed for ' + date + ' at ' + hours + ':' + mins;
 
     // Prevent default form submission
-    //return false;
+    return false;
 }
