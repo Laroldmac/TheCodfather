@@ -59,10 +59,11 @@ function contactForm() {
     var firstName = document.getElementById('firstName').value;
     var lastName = document.getElementById('lastName').value;
     var email = document.getElementById('email').value;
+    var email = document.getElementById('contactNumber').value;
 
     form.style.display = 'none';
 
-    alert (contactConfirmationMessage.innerHTML = 'Thank you, ' + firstName + " " + lastName + ', we will be in contact with you soon, at: ' + email + ' or at ' + email);
+    alert (contactConfirmationMessage.innerHTML = 'Thank you, ' + firstName + " " + lastName + ', we will be in contact with you soon, at: ' + email + ' or at ' + contactNumber);
 
 }
 
