@@ -50,3 +50,27 @@ function myForm() {
     // Prevent default form submission
     return false;
 }
+
+function contactForm() {
+
+    var form = document.getElementById('contactForm');
+    var contactConfirmationMessage = document.getElementById('contactConfirmationMessage');
+
+    var firstName = document.getElementById('firstName').value;
+    var lastName = document.getElementById('lastName').value;
+    var email = document.getElementById('email').value;
+
+    form.style.display = 'none';
+
+    alert (contactConfirmationMessage.innerHTML = 'Thank you, ' + firstName + " " + lastName + ', we will be in contact with you soon, at: ' + email + ' or at ' + email);
+
+}
+
+function myGallery(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+  

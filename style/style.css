@@ -1,5 +1,5 @@
 * {
-    background-color: #333;
+    background-color: transparent;
     color: aliceblue !important;
     font-stretch: expanded;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -99,5 +99,75 @@ content: '';
 	width: 50px;
 
 }
-
 /* CSS for Index page ends */
+/* Kamila's below */
+.container1 {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.row1 {
+    flex: 1;
+    padding-top: 20px;
+    padding-left: 40px;
+    border-radius: 25px;
+}
+
+.row2 {
+    flex: 1;
+    padding-top: 20px;
+    padding-left: 40px;
+    border-radius: 25px;
+}
+
+.column1 {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}  
+
+.column1 img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 80%;
+    border-radius: 25px;
+}
+
+.column1 img:hover {
+    opacity: 1;
+}
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container2 {
+    position: relative;
+    display: none;
+}
+
+#imgtext {
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 150%;
+    text-align: left;
+    color: black !important;
+}
+
+.p2 {
+    font-size: 150% !important;
+    text-align: left !important;
+    color: black !important;
+}

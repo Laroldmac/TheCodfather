@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Good Plates</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body style="background-color: #333";>
+    <header>
+        <nav class="navbar navbar-expand-sm flex-row justify-content-center" style="background-color: #333;">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking-form.html">Book a Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="location.html">Where to Find Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-form.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h1>The Good Plates</h1>
+
+    <div class="row2">
+        <div class="column1">
+          <img src="images/image1.png" alt="Our Server Katie, ready to serve you with a smile!" onclick="myGallery(this);">
+        </div>
+        <div class="column1">
+          <img src="images/image2.png" alt="Nothing beats a good dinner with friends." onclick="myGallery(this);">
+        </div>
+        <div class="column1">
+          <img src="images/image3.png" alt="All our food is made with fresh, locally sourced ingredients" onclick="myGallery(this);">
+        </div>
+        <div class="column1">
+          <img src="images/image4.png" alt="Call ahead, and book your table. Your table is waiting." onclick="myGallery(this);">
+        </div>
+    </div>
+
+    <div class="container2">
+        <br>
+        <div id="imgtext"></div>
+        <img id="expandedImg" style="width:50%; border-radius: 25px;">
+    </div>
+      
+    
+    <script src="style/script.js"></script>
+</body>
+</html>

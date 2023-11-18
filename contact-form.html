@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Good Plates</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body style="background-color: #333";>
+    <header>
+        <nav class="navbar navbar-expand-sm flex-row justify-content-center" style="background-color: #333;">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking-form.html">Book a Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="location.html">Where to Find Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-form.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h1>The Good Plates</h1>
+
+        <div class="container1">
+            <div class="row1" style="background-color: beige;">
+            <h2 style="color: black;"> Contact Information</h2>
+            <p class="p2" style="font-style: italic; color: black; text-align: left;"> Can’t find an answer you’re looking for on our website? Let us help you</p>
+            <br>
+            <br>
+            <p class="p2"> Phone: +123 456 7890 </p>
+            <br>
+            <p class="p2"> Email: thegoodplates@gmail.com </p>
+            <br>
+            <p class="p2"> Address: 51 St. Stephen’s Green, Dublin, Co. Dublin City </p>
+            </div>
+
+            <div class="row1">
+
+                <form id="contactForm" onsubmit="return contactForm()" style="text-align: left;">
+                    
+                    First Name: <input id="firstName" />
+                    Last Name: <input id="lastName" />
+                    <br><br>
+                    Contact Number: <input id="contactNumber" />
+                    Email: <input id="email" />
+                    <br><br>
+
+                    <br>
+                    <input type="radio" name="contactReason" value="1" id="mRadio"/> Need to change/cancel my booking
+                    <input type="radio" name="contactReason" value="2" id="mRadio"/> Question about menu/allergies <br><br>
+                    <input type="radio" name="contactReason" value="3" id="mRadio"/> Complaint/Feedback
+                    <input type="radio" name="contactReason" value="4" id="mRadio"/> Other <br><br>
+
+                    Your Message: <br><br>
+                    <textarea id="textarea" name="textarea" rows="4" cols="70"> Type your message here...
+                    </textarea>
+
+                    <br><br>
+                    <input type="submit" value="Submit" /><br>
+                </form>
+
+                <p id="contactConfirmationMessage"></p>
+                <script src="style/script.js"></script>
+                
+
+            </div>
+        </div> 
+            
+        </div>
+
+</body>
+</html>
+
