@@ -24,10 +24,10 @@ h1 {
 .para{
     background-color: #333;
 }
-/*.required::after {
+.required::after {
         content: ' *';
         color: red;
-      }*/
+      }
 //Laura end
 
 iframe{
