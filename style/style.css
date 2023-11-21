@@ -13,6 +13,7 @@ h1 {
     margin-top: none;
     margin-bottom: none;
     box-shadow: none;
+   
 }
 
 .navbar {
@@ -21,14 +22,6 @@ h1 {
     border-top: none;
     box-shadow: none;
 }
-.para{
-    background-color: #333;
-}
-.required::after {
-        content: ' *';
-        color: red;
-      }
-/*Laura end*/
 
 iframe{
     border-width: medium;
@@ -52,35 +45,35 @@ border-radius: 30%;
 
 .ContainerIndex {
     padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 
 }
 
 .Col1{
-    display: flex;
-    flex-wrap: wrap;
+    
    border-radius: 3%;
    border: 5px solid beige;
    justify-content: space-between;
+   flex-direction: row;
 }
 
 .IndexCol1{
-
-    flex:1 ;
+   flex-direction: row ;
     order:1;
-    flex-grow: 3;
+    
     
 }
 
 .IndexCol2 {
-
-    flex:2 ;
-    order:3;
+flex-direction: row ;
+    order:2;
    
 }
 
 .IndexCol3 {
-
-    flex:3 ;
+flex-direction: row;
     order:3;
   
 }
@@ -106,6 +99,22 @@ content: '';
 	width: 50px;
 
 }
+
+
+
+.Background {
+
+    background-image: url(../Images/Background3.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    
+   
+
+
+}
+
 /* CSS for Index page ends */
 
 /* Kamila's below */
@@ -177,3 +186,167 @@ h3 {
     font-size: 150% !important;
     text-align: left !important;
 }
+
+/* CSS for Menu Page */ 
+
+.card-text {
+
+    color: black !important;
+}
+
+.Cardlist{
+
+color: black !important;
+
+
+}
+
+.Card-Container-Breakfast {
+
+margin-top: 10px;
+padding-bottom: 10px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+color: black;
+} 
+
+.Break1 {
+
+    
+    order: 1;
+
+    
+}
+
+.Break2 {
+
+    order: 2;
+    
+}
+
+.Break3 {
+
+    order: 3;
+
+    
+}
+
+.Lunch-Container {
+
+margin-top: 10px;
+padding-bottom: 10px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+color: black;
+
+}
+
+.Lunch1 {
+
+    
+    order: 1;
+
+    
+}
+
+.Lunch2 {
+
+    order: 2;
+    
+}
+
+.Lunch3 {
+
+    order: 3;
+
+    
+}
+
+.Dinner-Container {
+
+    margin-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: black;
+    
+    }
+    
+    .Dinner1 {
+    
+        
+        order: 1;
+    
+        
+    }
+    
+    .Dinner2 {
+    
+        order: 2;
+        
+    }
+    
+    .Dinner3 {
+    
+        order: 3;
+        
+    }
+
+.Breakfast{
+
+    font-family: 'Montserrat' , Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+    }
+    
+ .Lunch {
+    
+    font-family: 'Noto Sans' , Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+    
+ .Dinner {
+    
+        font-family: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif
+        ;
+    
+    }
+
+.card-img-top {
+        cursor: pointer;
+
+    }
+
+    @media (max-width: 992px) {
+        .Card-Container-Breakfast {
+
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+    }
+
+
+    @media (max-width: 992px) {
+        .Lunch-Container {
+
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+    }
+
+    @media (max-width: 992px) {
+        .Dinner-Container {
+
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+    }
