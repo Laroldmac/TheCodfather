@@ -1,4 +1,4 @@
-//Laura MacKenzie
+/*Laura MacKenzie*/
 * {
     background-color: transparent;
     color: aliceblue !important;
@@ -28,7 +28,7 @@ h1 {
         content: ' *';
         color: red;
       }
-//Laura end
+/*Laura end*/
 
 iframe{
     border-width: medium;
