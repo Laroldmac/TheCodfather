@@ -42,12 +42,12 @@
     <h1>The Good Plates</h1>
 
     <form id="myForm" onsubmit="return myForm()" action="/action_page.php"> 
-    Name: <input id="name" class="required"/><br><br>
-    Email: <input id="email" class="required"/><br><br>
-    Date: <input type="date" class="required" min="<?php echo date('d-m-Y'); ?>" />
+    Name: <input id="name" class="required" action="/action_page.php"/><br><br>
+    Email: <input id="email" class="required" action="/action_page.php"/><br><br>
+    Date: <input type="date" class="required" min="<?php echo date('d-m-Y'); ?>" action="/action_page.php"/>
         
     Time: 
-  <select name="hours" id="hours">
+  <select name="hours" id="hours" action="/action_page.php">
     <option value="--">--</option>
     <option value="15">15</option>
     <option value="16">16</option>
@@ -60,7 +60,7 @@
   </select>
 
   <label for="mins">mins:</label>
-  <select name="mins" id="mins">
+  <select name="mins" id="mins" action="/action_page.php">
     <option value="--">--</option>
     <option value="00">00</option>
     <option value="15">15</option>
@@ -68,22 +68,22 @@
     <option value="45">45</option>
   </select>
  <br><br>
-<p class="required">How many people in your party?</p>
+<p class="required" action="/action_page.php">How many people in your party?</p>
   <input type="radio" id="One" name="partysize" value="One">
   <label for="html">One</label><br>
   <input type="radio" id="Two" name="partysize" value="Two">
   <label for="css">Two</label><br>
   <input type="radio" id="Three" name="partysize" value="Three">
-  <label for="javascript">Three</label><br><br>
+  <label for="javascript">Three</label><br>
   <input type="radio" id="Four" name="partysize" value="Four">
-  <label for="javascript">Four</label><br><br>
+  <label for="javascript">Four</label><br>
   <input type="radio" id="Five" name="partysize" value="Five">
-  <label for="javascript">Five</label><br><br>
+  <label for="javascript">Five</label><br>
   <input type="radio" id="Six" name="partysize" value="Six">
   <label for="javascript">Six</label><br><br>
     <p> For party sizes greater than six, please call or use our online contact form. Thank you!</p><br><br>
         <p>Please check this box to agree to the terms and conditions of booking.</p>
-        <input type="checkbox" id="Agree" name="Agree" value="Agree">
+        <input type="checkbox" id="Agree" name="Agree" value="Agree" action="/action_page.php">
         <label for="vehicle1" class="required"> I agree</label><br>
     <input type="submit" value="Submit" /><br>
     </form>
