@@ -42,12 +42,12 @@
     <h1>The Good Plates</h1>
 
     <form id="myForm" onsubmit="return myForm()" action="/action_page.php"> 
-    Name: <input id="name" class="required" action="/action_page.php"/><br><br>
-    Email: <input id="email" class="required" action="/action_page.php"/><br><br>
-    Date: <input type="date" class="required" min="<?php echo date('d-m-Y'); ?>" action="/action_page.php"/>
+    Name: <input id="name" class="required" action="/action_page.php" required/><br><br>
+    Email: <input id="email" class="required" action="/action_page.php" required/><br><br>
+    Date: <input type="date" class="required" min="<?php echo date('d-m-Y'); ?>" action="/action_page.php" required/>
         
     Time: 
-  <select name="hours" id="hours" action="/action_page.php">
+  <select name="hours" id="hours" action="/action_page.php" required>
     <option value="--">--</option>
     <option value="15">15</option>
     <option value="16">16</option>
@@ -60,7 +60,7 @@
   </select>
 
   <label for="mins">mins:</label>
-  <select name="mins" id="mins" action="/action_page.php">
+  <select name="mins" id="mins" action="/action_page.php" required>
     <option value="--">--</option>
     <option value="00">00</option>
     <option value="15">15</option>
@@ -68,7 +68,7 @@
     <option value="45">45</option>
   </select>
  <br><br>
-<p class="required" action="/action_page.php">How many people in your party?</p>
+<p class="required" action="/action_page.php" required>How many people in your party?</p>
   <input type="radio" id="One" name="partysize" value="One">
   <label for="html">One</label><br>
   <input type="radio" id="Two" name="partysize" value="Two">
@@ -83,7 +83,7 @@
   <label for="css">Six</label><br><br>
     <p> For party sizes greater than six, please call or use our online contact form. Thank you!</p><br><br>
         <p>Please check this box to agree to the terms and conditions of booking.</p>
-        <input type="checkbox" id="Agree" name="Agree" value="Agree" action="/action_page.php">
+        <input type="checkbox" id="Agree" name="Agree" value="Agree" action="/action_page.php" required>
         <label for="vehicle1" class="required"> I agree</label><br>
     <input type="submit" value="Submit" /><br>
     </form>
