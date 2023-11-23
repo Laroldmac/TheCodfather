@@ -46,8 +46,9 @@ border-radius: 30%;
 .ContainerIndex {
     padding: 50px;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column-reverse
+    
+    
 
 }
 
@@ -55,25 +56,24 @@ border-radius: 30%;
     
    border-radius: 3%;
    border: 5px solid beige;
-   justify-content: space-between;
-   flex-direction: row;
+
 }
 
-.IndexCol1{
-   flex-direction: row ;
+#IndexCol1{
+   flex: 2;
     order:1;
     
     
 }
 
-.IndexCol2 {
-flex-direction: row ;
+#IndexCol2 {
+flex: 1;
     order:2;
    
 }
 
-.IndexCol3 {
-flex-direction: row;
+#IndexCol3 {
+flex:1;
     order:3;
   
 }
@@ -85,13 +85,13 @@ flex-direction: row;
 	text-transform: capitalize;
 	margin-bottom: 35px;
 	font-weight: 500;
-	position: relative;
+	
 
 }
 
 .IndexCol1 .IndexCol2 .IndexCol3 h2 {
 content: '';
-	position: absolute;
+	
 	left:0;
 	bottom: -10px;
 	height: 2px;
@@ -253,12 +253,14 @@ color: black;
 
 .Lunch2 {
 
+    
     order: 2;
     
 }
 
 .Lunch3 {
 
+    
     order: 3;
 
     
@@ -346,7 +348,21 @@ color: black;
 
             flex-direction: column;
             align-items: center;
+            border-bottom: 50px;
         }
 
+
+    }
+
+
+    @media(max-width: 992px) {
+        .ContainerIndex {
+            padding: 50px;
+            display: flex;
+            flex-direction: row;
+            
+            
+        
+        }
 
     }
