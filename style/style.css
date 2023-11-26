@@ -31,6 +31,7 @@ iframe{
     background-color: transparent;
     text-align: center;
     margin-bottom: 30px;
+    font-family: 'Montserrat' , Verdana, Geneva, Tahoma, sans-serif;
     
 }
 .required::after {
@@ -39,7 +40,7 @@ iframe{
       }
 /*Laura end*/
 
-/* CSS for Index page below*/
+/* CSS for Index page below (Jetinder Rathore)*/
 
 .R-Item {
 
@@ -107,7 +108,7 @@ border-radius: 30%;
 }
 
 .IndexCol1 .IndexCol2 .IndexCol3 h2 {
-content: '';
+
 	
 	left:0;
 	bottom: -10px;
@@ -136,7 +137,7 @@ content: '';
     text-align: center;
 
 }
-/* CSS for Index page ends */
+/* CSS for Index page ends (Jetinder Rathore ends)*/
 
 /* Kamila's below */
 .container1 {
@@ -208,7 +209,7 @@ h3 {
     text-align: left !important;
 }
 
-/* CSS for Menu Page */ 
+/* CSS for Menu Page (Jetinder Rathore starts)*/ 
 
 .card-text {
     color: black !important;
@@ -321,7 +322,9 @@ color: black;
 
     }
 
-    /* Responsive elements */
+ /* CSS for Menu page ends (Jetinder Rathore) */
+
+    /* Responsive element starts(Jetinder Rathore) */
 
     @media (max-width: 992px) {
         .Card-Container-Breakfast {
@@ -359,10 +362,28 @@ color: black;
         .ContainerIndex {
             padding: 50px;
             display: flex;
-            flex-direction: row;
-            
-            
+            flex-direction: row;    
         
         }
 
     }
+
+    @media(max-width: 700px) {
+        .para {
+            font-size: larger;
+              
+        }
+
+    }
+
+    @media(max-width: 992px) {
+        .card {
+            margin-bottom: 15px;
+              
+        }
+
+    }
+
+
+
+     /* Responsive element ends (Jetinder Rathore) */
