@@ -301,7 +301,6 @@ color: black;
 
     font-family: 'Montserrat' , Verdana, Geneva, Tahoma, sans-serif;
     
-    
     }
     
  .Lunch {
@@ -321,6 +320,8 @@ color: black;
         cursor: pointer;
 
     }
+
+    /* Responsive elements */
 
     @media (max-width: 992px) {
         .Card-Container-Breakfast {
@@ -353,7 +354,6 @@ color: black;
 
 
     }
-
 
     @media(max-width: 700px) {
         .ContainerIndex {

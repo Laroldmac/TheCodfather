@@ -82,55 +82,54 @@ let OutputMenu = document.querySelector("#OutputMenu");
 let Input = 0;
 
 
-
-But.addEventListener("click", function() {
-    
+function GetMenuItem () {
+    console.log("Click")
 
    let Input = document.querySelector("#UserChoice").value;
 
    if (Input>0 && Input <10 ) {
-    alert("You have selected Pancakes!");
+    window.alert("Congratulations, you have selected Pancakes!");
    // OutputMenu.innerHTML = "You have selected Pancakes!"
    }
 
    else if (Input>10 && Input <20) {
-    alert("You have selected Pancakes!");
+    window.alert("Congratulations, you have selected Bruschetta!");
     //OutputMenu.innerHTML = "You have selected Bruschetta!";
 
    }
 
    else if (Input>20 && Input <30) {
-    alert("You have selected Pancakes!");
+    alert("Congratualtions, You have selected Eggs Benedict!");
     //OutputMenu.innerHTML = "You have selected Eggs Benedict!";
 
    }
 
    else if (Input>30 && Input <40) {
-    alert("You have selected Pancakes!");
+    alert("Congratulations,you have Sun Vine Tomato Pasta!");
     //OutputMenu.innerHTML = "You have Sun Vine Tomato Pasta!";
 
    }
 
    else if (Input>40 && Input <50) {
-    alert("You have selected Pancakes!");
+    alert("Congratulations, you have selected Vegetarian Pizza!");
     //OutputMenu.innerHTML = "You have selected Vegetarian Pizza!";
 
    }
 
    else if (Input>50 && Input <60) {
-    alert("You have selected Pancakes!");
+    alert("Congratulations, You have selected Mushroom and Parmesan Spaghetti!");
     //OutputMenu.innerHTML = "You have selected Mushroom and Parmesan Spaghetti!";
 
    }
 
-   else if (Input>70 && Input <80) {
-    alert("You have selected Pancakes!");
+   else if (Input>60 && Input <80) {
+    alert("Congratulations, you have selected Lasagna!");
     //OutputMenu.innerHTML = "You have selected Lasagna!";
 
    }
 
    else if (Input>80 && Input <=100) {
-    alert("You have selected Pancakes!");
+    alert("Congratulations, You have selected Bufallo Mozarella Macaroni Tomato Pasta!!");
     //OutputMenu.innerHTML = "You have selected Bufallo Mozarella Macaroni Tomato Pasta!";
 
    }
@@ -143,4 +142,4 @@ But.addEventListener("click", function() {
    };
    
 
-});
+}
