@@ -83,7 +83,7 @@ let Input = 0;
 
 
 function GetMenuItem () {
-    console.log("Click")
+   
 
    let Input = document.querySelector("#UserChoice").value;
 

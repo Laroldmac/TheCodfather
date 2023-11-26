@@ -27,13 +27,7 @@ iframe{
     border-width: medium;
 }
 
-.para{
-    background-color: transparent;
-    text-align: center;
-    margin-bottom: 30px;
-    font-family: 'Montserrat' , Verdana, Geneva, Tahoma, sans-serif;
-    
-}
+
 .required::after {
         content: ' *';
         color: red;
@@ -41,6 +35,14 @@ iframe{
 /*Laura end*/
 
 /* CSS for Index page below (Jetinder Rathore)*/
+
+.para{
+    background-color: transparent;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Montserrat' , Verdana, Geneva, Tahoma, sans-serif;
+    
+}
 
 .R-Item {
 
@@ -67,18 +69,12 @@ border-radius: 30%;
 }
 
 .Col1{
-    
    border-radius: 3%;
    border: 5px solid beige;
-
 }
 
 #IndexCol1{
-   
-    order:3;
-
-    
-    
+    order:3;   
 }
 
 #IndexCol2 {
