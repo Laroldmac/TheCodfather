@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--Laura MacKenzie-->
     <title>The Good Plates</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -41,13 +40,13 @@
 
     <h1>The Good Plates</h1>
 
-    <form id="myForm" onsubmit="return myForm()" action="/action_page.php"> 
-    Name: <input id="name" class="required" action="/action_page.php" required/><br><br>
-    Email: <input id="email" class="required" action="/action_page.php" required/><br><br>
-    Date: <input type="date" class="required" min="<?php echo date('d-m-Y'); ?>" action="/action_page.php" required/>
+    <form id="myForm" onsubmit="return myForm()"> 
+    Name: <input id="name" /><br><br>
+    Email: <input id="email" /><br><br>
+    Date: <input type="date" min="<?php echo date('d-m-Y'); ?>" />
         
     Time: 
-  <select name="hours" id="hours" action="/action_page.php" required>
+  <select name="hours" id="hours">
     <option value="--">--</option>
     <option value="15">15</option>
     <option value="16">16</option>
@@ -60,7 +59,7 @@
   </select>
 
   <label for="mins">mins:</label>
-  <select name="mins" id="mins" action="/action_page.php" required>
+  <select name="mins" id="mins">
     <option value="--">--</option>
     <option value="00">00</option>
     <option value="15">15</option>
@@ -68,28 +67,21 @@
     <option value="45">45</option>
   </select>
  <br><br>
-<p class="required" action="/action_page.php" required>How many people in your party?</p>
+<p>How many people in your party?</p>
   <input type="radio" id="One" name="partysize" value="One">
   <label for="html">One</label><br>
   <input type="radio" id="Two" name="partysize" value="Two">
   <label for="css">Two</label><br>
   <input type="radio" id="Three" name="partysize" value="Three">
-  <label for="css">Three</label><br>
-  <input type="radio" id="Four" name="partysize" value="Four">
-  <label for="css">Four</label><br>
-  <input type="radio" id="Five" name="partysize" value="Five">
-  <label for="css">Five</label><br>
-  <input type="radio" id="Six" name="partysize" value="Six">
-  <label for="css">Six</label><br><br>
-    <p> For party sizes greater than six, please call or use our online contact form. Thank you!</p><br><br>
+  <label for="javascript">Three</label><br><br>
         <p>Please check this box to agree to the terms and conditions of booking.</p>
-        <input type="checkbox" id="Agree" name="Agree" value="Agree" action="/action_page.php" required>
-        <label for="vehicle1" class="required"> I agree</label><br>
+        <input type="checkbox" id="Agree" name="Agree" value="Agree">
+        <label for="vehicle1"> I agree</label><br>
     <input type="submit" value="Submit" /><br>
     </form>
     <p id="confirmationMessage"></p>
     <script src="style/script.js"></script>
 
-        <!--/Laura MacKenzie-->
+    
 </body>
 </html>
