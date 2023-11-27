@@ -1,3 +1,4 @@
+/*Laura MacKenzie*/
 * {
     background-color: transparent;
     color: aliceblue !important;
@@ -12,6 +13,7 @@ h1 {
     margin-top: none;
     margin-bottom: none;
     box-shadow: none;
+   
 }
 
 .navbar {
@@ -20,14 +22,27 @@ h1 {
     border-top: none;
     box-shadow: none;
 }
-.para{
-    background-color: #333;
-}
+
 iframe{
     border-width: medium;
 }
 
-/* CSS for Index page below*/
+
+.required::after {
+        content: ' *';
+        color: red;
+      }
+/*Laura end*/
+
+/* CSS for Index page below (Jetinder Rathore)*/
+
+.para{
+    background-color: transparent;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Montserrat' , Verdana, Geneva, Tahoma, sans-serif;
+    
+}
 
 .R-Item {
 
@@ -45,38 +60,37 @@ border-radius: 30%;
 
 .ContainerIndex {
     padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+    
 
 }
 
 .Col1{
-    display: flex;
-    flex-wrap: wrap;
    border-radius: 3%;
    border: 5px solid beige;
-   justify-content: space-between;
 }
 
-.IndexCol1{
+#IndexCol1{
+    order:3;   
+}
 
-    flex:1 ;
-    order:1;
-    flex-grow: 3;
+#IndexCol2 {
+
+    order:2;
+    
     
 }
 
-.IndexCol2 {
+#IndexCol3 {
 
-    flex:2 ;
-    order:3;
-   
-}
-
-.IndexCol3 {
-
-    flex:3 ;
-    order:3;
+    order:1;
+  
   
 }
+
 
 .IndexCol1 .IndexCol2 .IndexCol3 h2 {
 
@@ -85,13 +99,13 @@ border-radius: 30%;
 	text-transform: capitalize;
 	margin-bottom: 35px;
 	font-weight: 500;
-	position: relative;
+	
 
 }
 
 .IndexCol1 .IndexCol2 .IndexCol3 h2 {
-content: '';
-	position: absolute;
+
+	
 	left:0;
 	bottom: -10px;
 	height: 2px;
@@ -99,7 +113,27 @@ content: '';
 	width: 50px;
 
 }
-/* CSS for Index page ends */
+
+
+
+.Background {
+
+    background-image: url(../Images/Background10.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+
+#Decide {
+
+    font-family: 'Montserrat' , Verdana, Geneva, Tahoma, sans-serif; 
+    text-align: center;
+
+}
+/* CSS for Index page ends (Jetinder Rathore ends)*/
 
 /* Kamila's below */
 .container1 {
@@ -170,3 +204,182 @@ h3 {
     font-size: 150% !important;
     text-align: left !important;
 }
+
+/* CSS for Menu Page (Jetinder Rathore starts)*/ 
+
+.card-text {
+    color: black !important;
+}
+
+.Cardlist{
+color: black !important;
+}
+
+.Card-Container-Breakfast {
+
+margin-top: 10px;
+padding-bottom: 10px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+color: black;
+} 
+
+.Break1 {
+    order: 1;
+}
+
+.Break2 {
+    order: 2;   
+}
+
+.Break3 {
+    order: 3;
+}
+
+.Lunch-Container {
+
+margin-top: 10px;
+padding-bottom: 10px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+color: black;
+
+}
+
+.Lunch1 {
+
+    
+    order: 1;
+
+    
+}
+
+.Lunch2 {
+
+    
+    order: 2;
+    
+}
+
+.Lunch3 {
+
+    
+    order: 3;
+
+    
+}
+
+.Dinner-Container {
+
+    margin-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: black;
+    
+    }
+    
+    .Dinner1 {    
+        order: 1; 
+    }
+    
+    .Dinner2 {
+        order: 2;  
+    }
+    
+    .Dinner3 {
+        order: 3;
+    }
+
+.Breakfast{
+
+    font-family: 'Montserrat' , Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+    
+ .Lunch {
+    
+    font-family: 'Noto Sans' , Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+    
+ .Dinner {
+    
+        font-family: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif
+        ;
+    
+    }
+
+.card-img-top {
+        cursor: pointer;
+
+    }
+
+ /* CSS for Menu page ends (Jetinder Rathore) */
+
+    /* Responsive element starts(Jetinder Rathore) */
+
+    @media (max-width: 992px) {
+        .Card-Container-Breakfast {
+
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+    }
+
+
+    @media (max-width: 992px) {
+        .Lunch-Container {
+
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+    }
+
+    @media (max-width: 992px) {
+        .Dinner-Container {
+
+            flex-direction: column;
+            align-items: center;
+            border-bottom: 50px;
+        }
+
+
+    }
+
+    @media(max-width: 700px) {
+        .ContainerIndex {
+            padding: 50px;
+            display: flex;
+            flex-direction: row;    
+        
+        }
+
+    }
+
+    @media(max-width: 700px) {
+        .para {
+            font-size: larger;
+              
+        }
+
+    }
+
+    @media(max-width: 992px) {
+        .card {
+            margin-bottom: 15px;
+              
+        }
+
+    }
+
+
+
+     /* Responsive element ends (Jetinder Rathore) */

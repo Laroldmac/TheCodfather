@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+        <!--Laura MacKenzie-->
     <title>The Good Plates</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -8,8 +9,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="image/x-icon" href="logo.png">
+
+
+     <!--Laura MacKenzie ends-->
+
+    <!--Jetinder Rathore starts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans:wght@800&display=swap" rel="stylesheet">
+
+
 </head>
-<body style="background-color: #333; color: aliceblue;">
+
+<body>
         <header>
             <nav class="navbar a navbar-expand-sm flex-row justify-content-center" style="background-color: #333; color: aliceblue;">
                 <div class="container-fluid">
@@ -37,10 +49,11 @@
             </nav>
         </header>
 
+        <div class="Background">
 
-    <img src="logo.png" alt="The Good Plates Logo" class="mx-auto" width="20%" height="20%">
+    <img src="logo.png" alt="The Good Plates Logo" class="mx-auto" width="300" height="300">
     <h1>The Good Plates</h1>
-    <p class="para" style="background-color:#333;">Serving healthy takes on dishes you love</p>
+    <h3 class="para">Serving healthy takes on dishes you love </h3>
     
     <div class="Carousel">
      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -66,61 +79,54 @@
         </div>
     </div>
 
+ 
+
 <div class="ContainerIndex">
    <div class="ContCol"> 
       <div class="Col1">
-        <div class="IndexCol1">
+        <div id="IndexCol1">
           <h2>Eat in with us today</h2>
-           <ul style="list-style-type: none;">
-              <li> Find our location</li>
+          <p> Find our location</p>
+            <p>
               <a href="location.html">
               <button type="button" class="btn btn-primary btn-sm" >Find us Here!</button>
             </a>
-          </ul>
+          </p>
             </div>
-            <div class="IndexCol3">
+
+            <div id="IndexCol2">
               <h2>Dine at home</h2>
-               <ul style="list-style-type: none;">
-                  <li> See our menu list</li>
+                  <p>See our menu list</p>
                   <a href="menu.html">
                     <button type="button" class="btn btn-primary btn-sm" >See Our Menus Here!</button>
                   </a>
-
-              </ul>
+          
                 </div>
-                <div class="IndexCol3">
-                  <h2>Order for collection</h2>
-                   <ul style="list-style-type:none;">
-                      <li> It's coming soon!</li>
-                  </ul>
+                <div id="IndexCol3">
+                  <h2>Order for collection</h2>           
+                      <p>It's coming soon!</p>
               </div>
         </div>
     </div>
 </div>
 
 
-    <footer class="footerIndex">
-      <div class="footcontainer">
-        <div class="rowfooter">
-          <div class="footcol">
+<div class="Minigame">
+<h4 id="Decide">Cant decide what to eat? Play our mingame below to help decide!</h4>
+<p id="OutputMenu">Pick a random number between 1-100 below and recieve a random menu item</p>
+
+<input type="text" id="UserChoice"><br>
+<button onclick="GetMenuItem()" id="But">Click Me!</button>
 
 
 
+  </div>
+  <br>
+</div>
 
-          </div>
-
-
-
-
-
-
-        </div>        
-      </div>
-    </footer>
-      
-
-
-
-    <script src="style/script.js"></script>
+ 
+<script src="style/script.js"></script>
 </body>
 </html>
+
+ <!--Jetinder Rathore ends-->
