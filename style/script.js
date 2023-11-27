@@ -59,7 +59,7 @@ function contactForm() {
     var firstName = document.getElementById('firstName').value;
     var lastName = document.getElementById('lastName').value;
     var email = document.getElementById('email').value;
-    var email = document.getElementById('contactNumber').value;
+    var contactNumber = document.getElementById('contactNumber').value;
 
     form.style.display = 'none';
 
