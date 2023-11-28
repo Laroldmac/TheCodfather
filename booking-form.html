@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!--Laura MacKenzie-->
+    <!-- Laura MacKenzie -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Good Plates</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -11,10 +13,10 @@
     <link rel="icon" type="image/x-icon" href="logo.png">
 </head>
 <body style="background-color: #333; color: aliceblue;">
-        <header>
-            <nav class="navbar a navbar-expand-sm flex-row justify-content-center" style="background-color: #333; color: aliceblue;">
-                <div class="container-fluid">
-                    <ul class="navbar-nav">
+    <header>
+        <nav class="navbar a navbar-expand-sm flex-row justify-content-center" style="background-color: #333; color: aliceblue;">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
@@ -34,18 +36,19 @@
                             <a class="nav-link" href="gallery.html">Gallery</a>
                         </li>
                     </ul>
-                </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
+
     <img src="logo.png" alt="The Good Plates Logo" class="mx-auto" width="20%" height="20%">
 
     <h1>The Good Plates</h1>
 
-    <form id="myForm" onsubmit="return myForm()" action="/action_page.php"> 
+    <form id="myForm" onsubmit="return myForm()" action="/action_page.php">
+        
     Name: <input id="name" class="required" action="/action_page.php" required/><br><br>
     Email: <input id="email" class="required" action="/action_page.php" required/><br><br>
-    Date: <input type="date" class="required" min="<?php echo date('d-m-Y'); ?>" action="/action_page.php" required/>
-        
+    Date: <input type="date" class="required" min="<?php echo date('Y-m-d'); ?>" action="/action_page.php" required/>
     Time: 
   <select name="hours" id="hours" action="/action_page.php" required>
     <option value="--">--</option>
@@ -68,28 +71,28 @@
     <option value="45">45</option>
   </select>
  <br><br>
-<p class="required" action="/action_page.php" required>How many people in your party?</p>
-  <input type="radio" id="One" name="partysize" value="One">
-  <label for="html">One</label><br>
-  <input type="radio" id="Two" name="partysize" value="Two">
-  <label for="css">Two</label><br>
-  <input type="radio" id="Three" name="partysize" value="Three">
-  <label for="css">Three</label><br>
-  <input type="radio" id="Four" name="partysize" value="Four">
-  <label for="css">Four</label><br>
-  <input type="radio" id="Five" name="partysize" value="Five">
-  <label for="css">Five</label><br>
-  <input type="radio" id="Six" name="partysize" value="Six">
-  <label for="css">Six</label><br><br>
+    <label for="partysize" class="required">How many people in your party?</label>
+        <input type="radio" id="One" name="partysize" value="One" required>
+        <label for="One">One</label>
+        <input type="radio" id="Two" name="partysize" value="Two" required>
+        <label for="Two">Two</label><br>
+        <input type="radio" id="Three" name="partysize" value="Three" required>
+        <label for="Three">Three</label><br>
+        <input type="radio" id="Four" name="partysize" value="Four" required>
+        <label for="Four">Four</label><br>
+        <input type="radio" id="Five" name="partysize" value="Five" required>
+        <label for="Five">Five</label><br>
+        <input type="radio" id="Six" name="partysize" value="Six" required>
+        <label for="Six">Six</label><br><br>
     <p> For party sizes greater than six, please call or use our online contact form. Thank you!</p><br><br>
         <p>Please check this box to agree to the terms and conditions of booking.</p>
-        <input type="checkbox" id="Agree" name="Agree" value="Agree" action="/action_page.php" required>
-        <label for="vehicle1" class="required"> I agree</label><br>
-    <input type="submit" value="Submit" /><br>
+        <input type="checkbox" id="Agree" name="Agree" value="Agree" required>
+        <label for="Agree" class="required"> I agree</label><br>
+
+        <input type="submit" value="Submit" />
     </form>
     <p id="confirmationMessage"></p>
     <script src="style/script.js"></script>
-
-        <!--/Laura MacKenzie-->
 </body>
 </html>
+<!--/Laura MacKenzie-->
