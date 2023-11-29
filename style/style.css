@@ -318,6 +318,21 @@ color: black;
 
     }
 
+#Button3 {
+
+    height: 40px;
+    width: 200px;
+    background-color: grey;
+   
+
+}
+
+.Button4 {
+
+    padding-bottom: 30px;
+
+
+}
  /* CSS for Menu page ends (Jetinder Rathore) */
 
     /* Responsive element starts(Jetinder Rathore) */

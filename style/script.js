@@ -143,3 +143,12 @@ function GetMenuItem () {
    
 
 }
+// Font change on menu page (Jetinder Rathore)
+
+function FontChange (){
+    document.getElementById("Change").style.fontStyle = "italic";
+    document.getElementById("Men1").style.fontStyle = "italic";
+    document.getElementById("Men2").style.fontStyle = "italic";
+    document.getElementById("Men3").style.fontStyle = "italic";
+
+}
