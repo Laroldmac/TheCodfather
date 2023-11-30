@@ -1,3 +1,4 @@
+//Laura MacKenzie
 var currentDate = new Date();
 var day = currentDate.getDate();
 var month = currentDate.getMonth() + 1;
@@ -10,12 +11,12 @@ if (day < 10) {
 if (month < 10) {
     month = '0' + month; 
 }
-
+//Laura MacKenzie
 var formattedDate = year + '-' + month + '-' + day;
-
+//Laura MacKenzie
 document.getElementById('date').min = formattedDate;
 
-// Function to filter time options based on hours and minutes
+//Laura MacKenzieFunction to filter time options based on hours and minutes
 function filterTimeOptions() {
     const selectedHour = document.getElementById('hours').value;
     const selectedMinute = document.getElementById('mins').value;
@@ -31,7 +32,7 @@ function filterTimeOptions() {
         }
     });
 }
-
+//Laura MacKenzie
 function myForm() {
     // Get the form elements by their IDs
     var name = document.getElementById('name').value;
@@ -50,7 +51,17 @@ function myForm() {
     // Prevent default form submission
     return false;
 }
-
+//Laura MacKenzie
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+//Laura MacKenzie
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+//Laura MacKenzie
 function contactForm() {
 
     var form = document.getElementById('contactForm');
