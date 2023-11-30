@@ -53,14 +53,26 @@ function myForm() {
 }
 //Laura MacKenzie
 function bigImg(x) {
-  x.style.height = "64px";
-  x.style.width = "64px";
+  x.style.height = "40%";
+  x.style.width = "40%";
 }
 //Laura MacKenzie
 function normalImg(x) {
-  x.style.height = "32px";
-  x.style.width = "32px";
+  x.style.height = "20%";
+  x.style.width = "20%";
 }
+document.addEventListener('DOMContentLoaded', function () {
+  var logoImg = document.querySelector('img[alt="The Good Plates Logo"]');
+  if (logoImg) {
+    logoImg.addEventListener('mouseover', function () {
+      bigImg(this);
+    });
+
+    logoImg.addEventListener('mouseout', function () {
+      normalImg(this);
+    });
+  }
+});
 //Laura MacKenzie
 function contactForm() {
 
